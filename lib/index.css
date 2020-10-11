@@ -123,6 +123,11 @@
         overflow: hidden;
         background-color: black;
         transition: all 0.5s ease;
+        text-align: center;
+    }
+    .nav a
+    {
+        padding: 10px 20px;
     }
     .header img
     {
@@ -233,7 +238,7 @@
 {
     .section-p
     {
-        font-size: .7rem;
+        font-size: .8rem;
     }
     .top-up
     {
@@ -250,9 +255,13 @@
     }
     .text-box h2
     {
-        padding-top: 30px;
         font-size: 1.2rem;
     }
+    .text-box p
+    {
+        font-size: .8rem;
+    }
+
 }
 
 /*latest Launches*/
