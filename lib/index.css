@@ -129,21 +129,12 @@
     {
         padding: 10px 20px;
     }
-    .header img
-    {
-        width: 80px;
-    }
-    .login-btn a
-    {
-        font-size: .8rem;
-        padding: 3px 10px;
-    }
     .mob-btn
     {
         display: inline;
         background-color: transparent;
         border: none;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         color: white;
     }
     #close-btn
