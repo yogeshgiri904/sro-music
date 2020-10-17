@@ -10,32 +10,32 @@
 
 </head>
 <body>
-    <div class="main">
-        <div class="header">
-            <button onclick="openBar()" id="open-btn" class="mob-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
-            <button onclick="closeBar()" id="close-btn" class="mob-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
-            <img src="img/logo.png" alt="Official logo">
-            <div class="nav" id="nav">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Blogs</a>
-                <a href="#">Gallary</a>
-                <a href="#">Contact</a>
-            </div>
-            <div class="login-btn">
-                <a href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i> Login</a>
-            </div>
-        </div>
-        <div class="heading">
-            <p>Introducing Shri Ram Organization | Official Music</p>
-            <h1>Feel the real <span>bass</span></h1>
-            <div class="explore-btn">
-                <a href="explore.html">Explore</a>
-            </div>
-        </div>
-    </div>
-
     <div class="site-body">
+        <div class="main">
+            <div class="header" id="header">
+                <button onclick="openBar()" id="open-btn" class="mob-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <button onclick="closeBar()" id="close-btn" class="mob-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <img src="img/logo.png" alt="Official logo">
+                <div class="nav" id="nav">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Blogs</a>
+                    <a href="#">Gallary</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="login-btn">
+                    <a href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i> Login</a>
+                </div>
+            </div>
+            <div class="heading">
+                <p>Introducing Shri Ram Organization | Official Music</p>
+                <h1>Feel the real <span>bass</span></h1>
+                <div class="explore-btn">
+                    <a href="music.html">Explore</a>
+                </div>
+            </div>
+        </div>
+
         <div class="section">
             <h1 class="section-h">Top Upcomings</h1>
             <p class="section-p">Need not to wait more, Our top Upcomings are arriving. </br>A little more wait then Enjoy the real base.</p>
@@ -44,7 +44,7 @@
                     <img src="img/mirzapur1.jpg">
                 </div>
                 <div class="text-box">
-                    <span id="demo"></span>
+                    <span id="clock"></span>
                     <h2>MIRZAPUR - Season 2</h2>
                     <img src="img/5-stars.png" class="stars">
                     <p>Genre - Crime | Thriller | Action</p>
@@ -52,8 +52,8 @@
                     <p>Cast - Pankaj Tripathi | Ali Fazal |</br> Vikrant Massey | Divyendu Sharma</p>
                 </div>
             </div>
-            
         </div>
+
         <div class="section">
             <h1 class="section-h">Latest Launches</h1>
             <p class="section-p">Need not to wait more, Our top Upcomings are arriving. </br>A little more wait then Enjoy the real base.</p>
@@ -116,6 +116,7 @@
                 </div>
             </div>  
         </div>
+
         <div class="section">
             <h1 class="section-h">Top Trendings</h1>
             <p class="section-p">Need not to wait more, Our top Upcomings are arriving. </br>A little more wait then Enjoy the real base.</p>
@@ -178,10 +179,52 @@
                 </div>
             </div>  
         </div>
-
-        <div class="section"></div>   
-    </div>
     
+        <div class="footer">
+            <div class="footer-item">
+                <div class="footer-child" id="about">
+                    <div class="footer-logo">
+                    <a href="Aboutus.html"><img src="img/logo.png" alt="Shri Ram Org."></a> 
+                    </div>
+                    <p> We are the perfect online learning platform having above 1 lakh courses,
+                        Take courses in anything from programming languages to personality Development.
+                        We have both free and paid courses within your budget.</p>
+                    <span>
+                        Know more about <a href="aboutus.html"> Shri Ram Organiation<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </span> 
+                    
+                </div>
+        
+                <div class="footer-child" id="address">
+                    <h3>Address</h3> 
+                    <ul class="ul">
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Agra, Uttar Pradesh</li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> +91 9690484308</li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> Mail2sro@gmail.com</li>
+                    </ul>   
+                </div>    
+                <div class="footer-child" id="contact">
+                    <h3>Stay Connected</h3>
+                    <form> 
+                        <input type="email"  placeholder="Enter Your Email">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                    <div class="social">
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.twitter.com/login"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://accounts.google.com/ServiceLogin"><i class="fa fa-google" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/accounts/login"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/login"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+                <div class="copyright">
+                    <p> &copy; Copyright 2020 Shri Ram Org. | All Rights Reserved </p>
+                </div>
+        </div>
+</div>
+
+
 </body>
 </html>
 <script>
@@ -190,12 +233,16 @@
         document.getElementById('nav').style.height='50vh'
         document.getElementById('open-btn').style.display='none'
         document.getElementById('close-btn').style.display='inline'
+        document.getElementById("header").style.backgroundColor='black';
+
     }
     function closeBar()
     {
         document.getElementById('nav').style.height='0vh'
         document.getElementById('open-btn').style.display='inline'
         document.getElementById('close-btn').style.display='none'
+        document.getElementById("header").style.backgroundColor='rgba(0, 0, 0, 0.500)';
+
     }
 
 </script>
@@ -218,14 +265,15 @@
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
-      // Output the result in an element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      // Output the result in an element with id="clock"
+      document.getElementById("clock").innerHTML = days + "d " + hours + "h "
       + minutes + "m " + seconds + "s ";
         
       // If the count down is over, write some text 
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
+        document.getElementById("clock").innerHTML = "LAUNCHED";
       }
     }, 1000);
+
     </script>
