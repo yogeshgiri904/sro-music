@@ -8,6 +8,10 @@
     outline: none;
     font-weight: 300;
 }
+html
+{
+    overflow-x: hidden;
+}
 .site-body
 {
     position: absolute;
@@ -20,10 +24,11 @@
 {
     width: 100vw;
     height: 120vh;
-    background-image: url(../img/Background-img.png);
+    background-image: url(../img/pexels-josh-hild-4256852.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0%, -10%;
+    background-position: center;
+    background-attachment: fixed;
 }
 .header
 {
@@ -34,7 +39,7 @@
     align-items: center;
     width: 100vw;
     height: 80px;
-    background-color: rgba(0, 0, 0, 0.500);
+    background-color: white;
     transition: all ease 0.5s;
 }
 .header img
@@ -46,26 +51,45 @@
 {
     margin: 0px 8px;
     text-decoration: none;
-    color: white;
+    color: black;
+    font-weight: bold;
 }
 .nav a:hover
 {
-    border-bottom: 2px solid white;
+    color: crimson;
+    border-bottom: 2px solid crimson;
 }
 .login-btn a
 {
-    color: cyan;
+    width: 90px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: seagreen;
+    border: 2px solid seagreen;
+    border-radius: 3px;
+    text-transform: uppercase;
     text-decoration: none;
-    border: 2px solid cyan;
+    font-family: "Raleway";
     font-weight: bold;
-    border-radius: 100px;
-    padding: 6px 15px;
     transition: 0.5s;
+}
+.login-btn a:nth-child(2)
+{
+    background-color: crimson;
+    border: 2px solid crimson;
 }
 .login-btn a:hover
 {
-    background-color: cyan;
-    color: black;
+    background-color: transparent;
+    color: seagreen;
+}
+.login-btn a:nth-child(2):hover
+{
+    background-color: transparent;
+    color: crimson;
 }
 .heading
 {
@@ -89,22 +113,57 @@
     color: cyan;
     text-transform: uppercase;
 }
+.search-bar
+{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 40px;
+    background-color: white;
+}
+.search-bar input
+{
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
+    color: black;
+    font-size: .8rem;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    border: none;
+}
+.search-bar button
+{
+    width: 150px;
+    height: 100%;
+    color: white;
+    background-color: crimson;
+    border: none;
+}
+.search-bar .fa
+{
+    margin-right: 10px;
+}
 .explore-btn a
 {
     display: inline-block;
     margin-top: 30px;
     color: black;
+    color: palegoldenrod;
+    background-color: transparent;
+    border: 2px solid palegoldenrod;
     text-decoration: none;
-    background: linear-gradient(to right bottom, purple, cyan);
     border-radius: 100px;
     padding: 10px 40px;
-
+    font-weight: bold;
+    transition: all 0.5s ease;
 }
 .explore-btn a:hover
 {
+    background-color: palegoldenrod;
     color: white;
-    background: transparent;
-    border: 1px solid white ;
 }
 .mob-btn
 {
@@ -127,13 +186,13 @@
         display: inline-flex;
         flex-flow: column;
         overflow: hidden;
-        background-color: black;
+        background-color: white;
         transition: all 0.5s ease;
     }
     .nav a
     {
         padding: 10px 20px;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid black;
     }
     .nav a:first-child
     {
@@ -149,9 +208,39 @@
         background-color: transparent;
         border: none;
         font-size: 1.5rem;
-        color: white;
+        color: black;
+        cursor: pointer;
     }
     #close-btn
+    {
+        color: black;
+        display: none;
+    }
+    .heading h1
+    {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+    .search-bar
+    {
+        width: 90%;
+        height: 40px;
+    }
+    .search-bar input
+    {
+        width: 80%;
+        height: 100%;
+        font-size: .6rem;
+        padding-left: 10px;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+    .search-bar button
+    {
+        width: 15%;
+        text-align: center;
+    }
+    .search-bar button span
     {
         display: none;
     }
@@ -175,11 +264,13 @@
     background-repeat: no-repeat;
     background-position: right;
     background-size: 50%;
+    overflow-x: hidden;
 }
 .section-h
 {
     font-weight: bold;
     font-size: 2rem;
+    text-align: center;
 }
 .section-p
 {
@@ -192,7 +283,7 @@
     background-image: url(../img/Abstract-2.png);
     background-position: left;
 }
-.top-up
+.main-flex
 {
     display: flex;
     justify-content: space-around;
@@ -225,7 +316,7 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 20px 8%;
 }
 .text-box span
 {
@@ -237,13 +328,34 @@
 .text-box h2
 {
     font-weight: bold;
+    text-align: center;
+}
+.about-text
+{
+    font-size: 0.8rem;
 }
 .stars
 {
-    width: 130px;
-    height: 50px;
+    width: 150px;
+    height: 32px;
 }
-
+.pre-register
+{
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    background-color: crimson;
+    color: white;
+    border: 1px solid crimson;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.pre-register:hover
+{
+    background-color: transparent;
+    color: crimson;
+}
 @media(max-width: 720px)
 {
     .section-p
@@ -266,84 +378,132 @@
     {
         width: 100%;
     }
-
 }
 
 /*latest Launches*/
 
 .card-grid
 {
-    margin-top: 20px;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,300px);
-    grid-gap: 30px;
-    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
 }
 .card
 {
-    text-align: center;
-    border-radius: 4px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.500) ;
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 200px 160px 50px;
-    grid-template-areas: "img" "text" "stats";
+    position: relative;
+    width: 300px;
+    height: 420px;
+    margin: 20px;
+    border-radius: 10px;
+    display: inline-flex;
+    flex-flow: column;
+    background-color: transparent;
+}
+.card-grid::-webkit-scrollbar
+{
+    display: none;
 }
 .card-img
 {
-    grid-area: img;
-    background-image: url(../img/card-5.png);
-    background-size: cover;
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(25, 25, 25);
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px black;
 }
-.card:nth-child(2) .card-img
+.card-img img
 {
-    background-image: url(../img/card-2.png);
+    width: 100px;
+    height: 100px;
 }
-.card:nth-child(3) .card-img
-{
-    background-image: url(../img/card-3.png);
-}
-.card:nth-child(4) .card-img
-{
-    background-image: url(../img/card-4.png);
-}
-
 .like
 {
-    float: right;
-    position: relative;
-    top: 20px;
-    right: 20px;
-    height: 40px;
-    width: 40px;
-    padding-top: 2px;
-    font-size: 1.8rem;
-    color: crimson;
-    border: none;
+    position: absolute;
+    top: 4%;
+    right: 6%;
     background-color: transparent;
+    color: white;
+    background-color: crimson;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
 }
 .card-text
 {
-    grid-area: text;
+    text-align: center;
+    padding: 20px 10px;
+}
+.fa-check-circle-o
+{
+    margin-left: 2px;
+    color: rgb(0, 255, 0);
 }
 .card-text h2
 {
     font-weight: bold;
-    margin-top: 10px;
-    font-size: 1.2rem;
 }
-.card-stats
+.card-text p
 {
-    padding-top: 10px;
-    grid-area: stats;
-    background-color: crimson;
-    color: white;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    font-size: .8rem;
 }
+.card-text .off
+{
+    margin-right: 10px;
+    text-decoration: line-through;
+    color: darkslategray;
+}
+.card-btn button
+{
+    margin-top: 30px;
+    border: 2px solid seagreen;
+    border-radius: 4px;
+    background-color: transparent;
+    color: seagreen;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition:  0.2s;
+}
+.card-btn button:hover
+{
+    color: white;
+    background-color: seagreen;
+}
+.card-btn button:first-child
+{
+    width: 200px;
+    color: white;
+    font-weight: bold;
+    background-color: seagreen;
+}
+.card-btn button:first-child:hover
+{
+    background-color: transparent;
+    color: seagreen;
+}
+.star
+{
+    color: crimson;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* footer starts here */
 
