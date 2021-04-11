@@ -103,8 +103,8 @@ html
 {
     text-transform: uppercase;
     letter-spacing: .2rem;
-    word-spacing: .4rem;
-    font-size: 5rem;
+    word-spacing: .3rem;
+    font-size: 4rem;
     font-weight: 500;
     text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.300);
 }
@@ -112,7 +112,7 @@ html
 {
     text-transform: capitalize;
     color: rgb(88, 85, 85);
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: .2rem;
 }
 .control
@@ -232,7 +232,6 @@ html
     display: none;
     padding: 0px 5px;
     width: 100%;
-    height: auto;
 }
 .search_box
 {
@@ -244,7 +243,8 @@ html
 }
 input
 {
-    width: 60%;
+    width: 55%;
+    height: 30px;
     border: none;
     border-bottom: 1px solid black;
     background-color: transparent;
@@ -252,7 +252,7 @@ input
 .playlist
 {
     width: 100%;
-    padding-top: 5px;
+    padding-top: 10px;
     font-size: 2rem;
     display: inline-flex;
     justify-content: space-between;
@@ -276,21 +276,25 @@ input
     color: crimson;
     border-bottom: 2px solid crimson;
 }
-.list_table td
+.list_table
 {
-    width: 100%;
+    width: 80%;
+    margin: auto;
+}
+.list_table ul
+{
+    list-style-type: none;
     text-align: left;
-    padding: 10px 6px;
-    background-color: skyblue;
+    font-size: 3rem;
 }
-.list_table td:hover
+.list_table li
 {
-    background-color: teal;
+    border-bottom: 2px solid black;
+    padding: 5px 20px;
 }
-.cbtn
+.list_table li:hover
 {
-    width: 30px;
-    height: 30px;
+    opacity: 0.6;
 }
 
 
@@ -302,6 +306,17 @@ input
 
 
 
+
+
+
+
+.copyright
+{
+    position: absolute;
+    bottom: 2%;
+    font-size: 2.6rem;
+    color: black;
+}
 
 /* add class - animation on playing */
 
@@ -318,17 +333,6 @@ input
     100%
     {
         transform: rotate(360deg);
-    }
-}
-
-
-@media(max-width:720px)
-{
-    .main_box
-    {
-        width: 100vw;
-        height: 100vh;
-        border-radius: 0px;
     }
 }
 
