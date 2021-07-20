@@ -14,17 +14,17 @@ html
 }
 .bg img
 {
-    height: 100%;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     filter: blur(5px);
     object-fit: cover;
 }
 .main
 {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
     display: inline-flex;
     justify-content: center;
     align-items: center;

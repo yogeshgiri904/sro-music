@@ -59,9 +59,9 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    color: cyan;
+    color: #2EE59D;
     background-color: transparent;
-    border: 2px solid cyan;
+    border: 2px solid #2EE59D;
     border-radius: 100px;
     text-transform: uppercase;
     text-decoration: none;
@@ -71,7 +71,7 @@
 }
 .login-btn a:hover
 {
-    background-color: cyan;
+    background-color: #2EE59D;
     color: black;
 }
 .heading
@@ -93,7 +93,7 @@
 .heading span
 {
     font-weight: bold;
-    color: cyan;
+    color: #2EE59D;
     text-transform: uppercase;
 }
 .explore-btn a
@@ -101,8 +101,8 @@
     display: inline-block;
     margin-top: 30px;
     color: black;
-    background-color: palegreen;
-    border: 2px solid palegreen;
+    background-color: #2EE59D;
+    border: 2px solid #2EE59D;
     text-decoration: none;
     border-radius: 100px;
     padding: 10px 40px;
@@ -111,7 +111,7 @@
 }
 .explore-btn a:hover
 {
-    color: palegreen;
+    color: #2EE59D;
     background-color: transparent;
 }
 .mob-btn
@@ -276,97 +276,6 @@
     }
 
 }
-
-/*latest Launches*/
-
-.card-grid
-{
-    width: 90%;
-    display: inline-flex;
-    justify-content: space-around;
-    align-items: center;
-    overflow: hidden;
-    margin: auto;
-}
-.card
-{
-    text-align: center;
-    border-radius: 4px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.500) ;
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 200px 160px 50px;
-    grid-template-areas: "img" "text" "stats";
-}
-.card-img
-{
-    grid-area: img;
-    background-image: url(../img/card-5.png);
-    background-size: cover;
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
-}
-.card:nth-child(2) .card-img
-{
-    background-image: url(../img/card-2.png);
-}
-.card:nth-child(3) .card-img
-{
-    background-image: url(../img/card-3.png);
-}
-.card:nth-child(4) .card-img
-{
-    background-image: url(../img/card-4.png);
-}
-
-.like
-{
-    float: right;
-    position: relative;
-    top: 20px;
-    right: 20px;
-    height: 40px;
-    width: 40px;
-    padding-top: 2px;
-    font-size: 1.8rem;
-    color: crimson;
-    border: none;
-    background-color: transparent;
-}
-.card-text
-{
-    grid-area: text;
-}
-.card-text h2
-{
-    font-weight: bold;
-    margin-top: 10px;
-    font-size: 1.2rem;
-}
-.card-stats
-{
-    padding-top: 10px;
-    grid-area: stats;
-    background-color: crimson;
-    color: white;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
